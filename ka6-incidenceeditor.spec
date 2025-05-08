@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.04.0
+%define		kdeappsver	25.04.1
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		incidenceeditor
 Summary:	Incidence editor
 Name:		ka6-%{kaname}
-Version:	25.04.0
+Version:	25.04.1
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	83a6570abd40c794165d54b20e93d3df
+# Source0-md5:	2831c0540bc636ae6cb04d7205023c1d
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= 5.11.1
