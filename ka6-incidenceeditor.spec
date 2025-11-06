@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.08.2
+%define		kdeappsver	25.08.3
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		incidenceeditor
 Summary:	Incidence editor
 Name:		ka6-%{kaname}
-Version:	25.08.2
-Release:	2
+Version:	25.08.3
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	bb3fbebeb1e0b5d6dda9067cca18a322
+# Source0-md5:	98d719947dfa1f3db43f98e9a8af378d
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= 5.11.1
@@ -96,7 +96,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{kaname}.lang
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/libKPim6IncidenceEditor.so.*.*
+%{_libdir}/libKPim6IncidenceEditor.so.*.*
 %ghost %{_libdir}/libKPim6IncidenceEditor.so.6
 %{_datadir}/qlogging-categories6/incidenceeditor.categories
 %{_datadir}/qlogging-categories6/incidenceeditor.renamecategories
